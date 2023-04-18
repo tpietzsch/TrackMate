@@ -140,9 +140,7 @@ public class TMUtils
 	@SuppressWarnings( "rawtypes" )
 	public static final ImgPlus rawWraps( final ImagePlus imp )
 	{
-		final ImgPlus< DoubleType > img = ImagePlusAdapter.wrapImgPlus( imp );
-		final ImgPlus raw = img;
-		return raw;
+		return ImagePlusAdapter.wrapImgPlus( imp );
 	}
 
 	/**
